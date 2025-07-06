@@ -15,6 +15,7 @@ namespace OOP_CourseProject
     /// </summary>
     public class EnumDescriptionConverter : IValueConverter
     {
+        // Converts an enum value to its description attribute or the enum name if no description is found.
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value is Enum enumValue)
